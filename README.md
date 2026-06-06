@@ -18,6 +18,16 @@ set ETH_RPC_URL=https://sepolia.infura.io/v3/YOUR-PROJECT-ID
 set SENDER_PRIVATE_KEY=your_private_key_hex
 ```
 
+```powershell
+# 设置变量
+$env:ETH_RPC_URL = "https://sepolia.infura.io/v3/YOUR-PROJECT-ID"
+
+# 查询变量
+echo $env:ETH_RPC_URL
+
+# 输出：https://sepolia.infura.io/v3/YOUR-PROJECT-ID
+```
+
 > 私钥支持带或不带 `0x` 前缀。**仅在测试网使用，切勿泄露主网私钥。**
 
 ### 3. 查看环境变量是否设置成功
