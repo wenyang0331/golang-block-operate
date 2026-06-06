@@ -22,6 +22,12 @@ set SENDER_PRIVATE_KEY=your_private_key_hex
 # 设置变量
 $env:ETH_RPC_URL = "https://sepolia.infura.io/v3/YOUR-PROJECT-ID"
 
+#测试网中的ETH_RPC_URL格式
+#$env:ETH_RPC_URL = "https://sepolia.infura.io/v3/9eca82c008204b7fb3a62e6aeb77a02e"
+# 注意:测试网中的 $env:ETH_RPC_URL =  "https://sepolia.infura.io/v3/YOUR-PROJECT-ID"
+#YOUR-PROJECT-ID为API KEY值
+
+
 # 查询变量
 echo $env:ETH_RPC_URL
 
