@@ -14,11 +14,13 @@ set ETH_RPC_URL=https://sepolia.infura.io/v3/YOUR-PROJECT-ID
 
 ### 2. 设置发送交易私钥（仅发送交易时需要）
 
-```cmd
+```
+#cmd
 set SENDER_PRIVATE_KEY=your_private_key_hex
 ```
 
-```powershell
+```
+#powershell
 # 设置变量
 $env:ETH_RPC_URL = "https://sepolia.infura.io/v3/YOUR-PROJECT-ID"
 
@@ -28,7 +30,7 @@ $env:ETH_RPC_URL = "https://sepolia.infura.io/v3/YOUR-PROJECT-ID"
 #YOUR-PROJECT-ID为API KEY值
 
 
-# 查询变量
+#powershell窗口 查询变量
 echo $env:ETH_RPC_URL
 
 # 输出：https://sepolia.infura.io/v3/YOUR-PROJECT-ID
@@ -38,7 +40,8 @@ echo $env:ETH_RPC_URL
 
 ### 3. 查看环境变量是否设置成功
 
-```cmd
+```
+#cmd 窗口查询
 echo %ETH_RPC_URL%
 echo %SENDER_PRIVATE_KEY%
 ```
