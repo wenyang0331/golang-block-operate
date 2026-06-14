@@ -67,8 +67,10 @@ func main() {
 		queryBlock(ctx, client, *blockNum)
 	case "send-tx":
 		sendTransaction(ctx, client, *toAddr, *amount)
+	case "demo-counter":
+		demoCounter()
 	default:
-		log.Fatalf("unknown mode: %s (use: query-block or send-tx)", *mode)
+		log.Fatalf("unknown mode: %s (use: query-block, send-tx, or demo-counter)", *mode)
 	}
 }
 
